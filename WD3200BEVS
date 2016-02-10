@@ -1,0 +1,193 @@
+smartctl 6.4 2014-10-07 r4002 [x86_64-linux-4.2.0-16-generic] (local build)
+Copyright (C) 2002-14, Bruce Allen, Christian Franke, www.smartmontools.org
+
+=== START OF INFORMATION SECTION ===
+Device Model:     WDC WD3200BEVS-26VAT0
+Serial Number:    WD-WX40A9947459
+LU WWN Device Id: 5 0014ee 258d4ffc5
+Firmware Version: 11.01A11
+User Capacity:    320,072,933,376 bytes [320 GB]
+Sector Size:      512 bytes logical/physical
+Rotation Rate:    5400 rpm
+Device is:        Not in smartctl database [for details use: -P showall]
+ATA Version is:   ATA8-ACS (minor revision not indicated)
+SATA Version is:  SATA 2.5, 1.5 Gb/s
+Local Time is:    Wed Feb 10 20:53:30 2016 UTC
+SMART support is: Available - device has SMART capability.
+SMART support is: Enabled
+
+=== START OF READ SMART DATA SECTION ===
+SMART overall-health self-assessment test result: PASSED
+
+General SMART Values:
+Offline data collection status:  (0x00)	Offline data collection activity
+					was never started.
+					Auto Offline Data Collection: Disabled.
+Self-test execution status:      (   0)	The previous self-test routine completed
+					without error or no self-test has ever 
+					been run.
+Total time to complete Offline 
+data collection: 		(10800) seconds.
+Offline data collection
+capabilities: 			 (0x7b) SMART execute Offline immediate.
+					Auto Offline data collection on/off support.
+					Suspend Offline collection upon new
+					command.
+					Offline surface scan supported.
+					Self-test supported.
+					Conveyance Self-test supported.
+					Selective Self-test supported.
+SMART capabilities:            (0x0003)	Saves SMART data before entering
+					power-saving mode.
+					Supports SMART auto save timer.
+Error logging capability:        (0x01)	Error logging supported.
+					General Purpose Logging supported.
+Short self-test routine 
+recommended polling time: 	 (   2) minutes.
+Extended self-test routine
+recommended polling time: 	 ( 127) minutes.
+Conveyance self-test routine
+recommended polling time: 	 (   5) minutes.
+SCT capabilities: 	       (0x303f)	SCT Status supported.
+					SCT Error Recovery Control supported.
+					SCT Feature Control supported.
+					SCT Data Table supported.
+
+SMART Attributes Data Structure revision number: 16
+Vendor Specific SMART Attributes with Thresholds:
+ID# ATTRIBUTE_NAME          FLAG     VALUE WORST THRESH TYPE      UPDATED  WHEN_FAILED RAW_VALUE
+  1 Raw_Read_Error_Rate     0x002f   200   200   051    Pre-fail  Always       -       2
+  3 Spin_Up_Time            0x0027   188   183   021    Pre-fail  Always       -       1558
+  4 Start_Stop_Count        0x0032   097   097   000    Old_age   Always       -       3692
+  5 Reallocated_Sector_Ct   0x0033   177   177   140    Pre-fail  Always       -       181
+  7 Seek_Error_Rate         0x002e   200   200   000    Old_age   Always       -       0
+  9 Power_On_Hours          0x0032   090   090   000    Old_age   Always       -       7712
+ 10 Spin_Retry_Count        0x0033   100   100   051    Pre-fail  Always       -       0
+ 11 Calibration_Retry_Count 0x0032   100   100   000    Old_age   Always       -       0
+ 12 Power_Cycle_Count       0x0032   098   098   000    Old_age   Always       -       2988
+192 Power-Off_Retract_Count 0x0032   200   200   000    Old_age   Always       -       104
+193 Load_Cycle_Count        0x0032   196   196   000    Old_age   Always       -       13892
+194 Temperature_Celsius     0x0022   102   088   000    Old_age   Always       -       45
+196 Reallocated_Event_Count 0x0032   130   130   000    Old_age   Always       -       70
+197 Current_Pending_Sector  0x0032   200   199   000    Old_age   Always       -       0
+198 Offline_Uncorrectable   0x0030   100   253   000    Old_age   Offline      -       0
+199 UDMA_CRC_Error_Count    0x0032   200   200   000    Old_age   Always       -       0
+200 Multi_Zone_Error_Rate   0x0009   200   200   051    Pre-fail  Offline      -       0
+
+SMART Error Log Version: 1
+ATA Error Count: 321 (device log contains only the most recent five errors)
+	CR = Command Register [HEX]
+	FR = Features Register [HEX]
+	SC = Sector Count Register [HEX]
+	SN = Sector Number Register [HEX]
+	CL = Cylinder Low Register [HEX]
+	CH = Cylinder High Register [HEX]
+	DH = Device/Head Register [HEX]
+	DC = Device Command Register [HEX]
+	ER = Error register [HEX]
+	ST = Status register [HEX]
+Powered_Up_Time is measured from power on, and printed as
+DDd+hh:mm:SS.sss where DD=days, hh=hours, mm=minutes,
+SS=sec, and sss=millisec. It "wraps" after 49.710 days.
+
+Error 321 occurred at disk power-on lifetime: 7698 hours (320 days + 18 hours)
+  When the command that caused the error occurred, the device was active or idle.
+
+  After command completion occurred, registers were:
+  ER ST SC SN CL CH DH
+  -- -- -- -- -- -- --
+  40 51 00 eb 6b 45 40  Error: UNC at LBA = 0x00456beb = 4549611
+
+  Commands leading to the command that caused the error were:
+  CR FR SC SN CL CH DH DC   Powered_Up_Time  Command/Feature_Name
+  -- -- -- -- -- -- -- --  ----------------  --------------------
+  60 80 b8 80 6b 45 24 08   1d+17:56:26.390  READ FPDMA QUEUED
+  60 80 b0 00 6b 45 24 08   1d+17:56:26.388  READ FPDMA QUEUED
+  60 80 a8 80 6a 45 24 08   1d+17:56:26.374  READ FPDMA QUEUED
+  60 80 a0 00 6a 45 24 08   1d+17:56:26.372  READ FPDMA QUEUED
+  60 80 98 80 69 45 24 08   1d+17:56:26.371  READ FPDMA QUEUED
+
+Error 320 occurred at disk power-on lifetime: 7683 hours (320 days + 3 hours)
+  When the command that caused the error occurred, the device was active or idle.
+
+  After command completion occurred, registers were:
+  ER ST SC SN CL CH DH
+  -- -- -- -- -- -- --
+  40 51 00 18 9b 45 40  Error: UNC at LBA = 0x00459b18 = 4561688
+
+  Commands leading to the command that caused the error were:
+  CR FR SC SN CL CH DH DC   Powered_Up_Time  Command/Feature_Name
+  -- -- -- -- -- -- -- --  ----------------  --------------------
+  60 08 c0 18 9b 45 24 08   1d+02:53:37.094  READ FPDMA QUEUED
+  27 00 00 00 00 00 00 08   1d+02:53:37.094  READ NATIVE MAX ADDRESS EXT [OBS-ACS-3]
+  ec 00 00 00 00 00 00 08   1d+02:53:37.086  IDENTIFY DEVICE
+  ef 03 46 00 00 00 00 08   1d+02:53:37.086  SET FEATURES [Set transfer mode]
+  27 00 00 00 00 00 00 08   1d+02:53:37.062  READ NATIVE MAX ADDRESS EXT [OBS-ACS-3]
+
+Error 319 occurred at disk power-on lifetime: 7683 hours (320 days + 3 hours)
+  When the command that caused the error occurred, the device was active or idle.
+
+  After command completion occurred, registers were:
+  ER ST SC SN CL CH DH
+  -- -- -- -- -- -- --
+  40 51 00 18 9b 45 40  Error: UNC at LBA = 0x00459b18 = 4561688
+
+  Commands leading to the command that caused the error were:
+  CR FR SC SN CL CH DH DC   Powered_Up_Time  Command/Feature_Name
+  -- -- -- -- -- -- -- --  ----------------  --------------------
+  60 08 60 18 9b 45 24 08   1d+02:53:32.870  READ FPDMA QUEUED
+  27 00 00 00 00 00 00 08   1d+02:53:32.869  READ NATIVE MAX ADDRESS EXT [OBS-ACS-3]
+  ec 00 00 00 00 00 00 08   1d+02:53:32.862  IDENTIFY DEVICE
+  ef 03 46 00 00 00 00 08   1d+02:53:32.862  SET FEATURES [Set transfer mode]
+  27 00 00 00 00 00 00 08   1d+02:53:32.830  READ NATIVE MAX ADDRESS EXT [OBS-ACS-3]
+
+Error 318 occurred at disk power-on lifetime: 7683 hours (320 days + 3 hours)
+  When the command that caused the error occurred, the device was active or idle.
+
+  After command completion occurred, registers were:
+  ER ST SC SN CL CH DH
+  -- -- -- -- -- -- --
+  40 51 00 18 9b 45 40  Error: UNC at LBA = 0x00459b18 = 4561688
+
+  Commands leading to the command that caused the error were:
+  CR FR SC SN CL CH DH DC   Powered_Up_Time  Command/Feature_Name
+  -- -- -- -- -- -- -- --  ----------------  --------------------
+  60 08 00 18 9b 45 24 08   1d+02:53:29.002  READ FPDMA QUEUED
+  27 00 00 00 00 00 00 08   1d+02:53:28.988  READ NATIVE MAX ADDRESS EXT [OBS-ACS-3]
+  ec 00 00 00 00 00 00 08   1d+02:53:28.981  IDENTIFY DEVICE
+  ef 03 46 00 00 00 00 08   1d+02:53:28.981  SET FEATURES [Set transfer mode]
+  27 00 00 00 00 00 00 08   1d+02:53:28.956  READ NATIVE MAX ADDRESS EXT [OBS-ACS-3]
+
+Error 317 occurred at disk power-on lifetime: 7683 hours (320 days + 3 hours)
+  When the command that caused the error occurred, the device was active or idle.
+
+  After command completion occurred, registers were:
+  ER ST SC SN CL CH DH
+  -- -- -- -- -- -- --
+  40 51 00 18 9b 45 40  Error: UNC at LBA = 0x00459b18 = 4561688
+
+  Commands leading to the command that caused the error were:
+  CR FR SC SN CL CH DH DC   Powered_Up_Time  Command/Feature_Name
+  -- -- -- -- -- -- -- --  ----------------  --------------------
+  60 08 98 18 9b 45 24 08   1d+02:53:25.207  READ FPDMA QUEUED
+  60 08 90 10 9b 45 24 08   1d+02:53:25.207  READ FPDMA QUEUED
+  60 40 88 28 9b 45 24 08   1d+02:53:25.184  READ FPDMA QUEUED
+  60 08 60 08 9b 45 24 08   1d+02:53:25.151  READ FPDMA QUEUED
+  27 00 00 00 00 00 00 08   1d+02:53:25.151  READ NATIVE MAX ADDRESS EXT [OBS-ACS-3]
+
+SMART Self-test log structure revision number 1
+Num  Test_Description    Status                  Remaining  LifeTime(hours)  LBA_of_first_error
+# 1  Extended offline    Completed without error       00%      7710         -
+# 2  Conveyance offline  Completed without error       00%      7708         -
+# 3  Short offline       Completed without error       00%      7708         -
+
+SMART Selective self-test log data structure revision number 1
+ SPAN  MIN_LBA  MAX_LBA  CURRENT_TEST_STATUS
+    1        0        0  Not_testing
+    2        0        0  Not_testing
+    3        0        0  Not_testing
+    4        0        0  Not_testing
+    5        0        0  Not_testing
+Selective self-test flags (0x0):
+  After scanning selected spans, do NOT read-scan remainder of disk.
+If Selective self-test is pending on power-up, resume after 0 minute delay.
