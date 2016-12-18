@@ -11,7 +11,7 @@ User Capacity:    80,026,361,856 bytes [80.0 GB]
 Sector Size:      512 bytes logical/physical
 Device is:        In smartctl database [for details use: -P show]
 ATA Version is:   ATA/ATAPI-7 (minor revision not indicated)
-Local Time is:    Sat Nov 26 17:54:20 2016 UTC
+Local Time is:    Sun Dec 18 09:01:01 2016 UTC
 SMART support is: Available - device has SMART capability.
 SMART support is: Enabled
 
@@ -56,17 +56,17 @@ SMART Attributes Data Structure revision number: 16
 Vendor Specific SMART Attributes with Thresholds:
 ID# ATTRIBUTE_NAME          FLAG     VALUE WORST THRESH TYPE      UPDATED  WHEN_FAILED RAW_VALUE
   1 Raw_Read_Error_Rate     0x000f   200   200   051    Pre-fail  Always       -       0
-  3 Spin_Up_Time            0x0003   160   159   021    Pre-fail  Always       -       966
-  4 Start_Stop_Count        0x0032   098   098   000    Old_age   Always       -       2479
+  3 Spin_Up_Time            0x0003   160   159   021    Pre-fail  Always       -       975
+  4 Start_Stop_Count        0x0032   098   098   000    Old_age   Always       -       2481
   5 Reallocated_Sector_Ct   0x0033   200   200   140    Pre-fail  Always       -       0
   7 Seek_Error_Rate         0x000f   200   200   051    Pre-fail  Always       -       0
-  9 Power_On_Hours          0x0032   095   095   000    Old_age   Always       -       3837
+  9 Power_On_Hours          0x0032   095   095   000    Old_age   Always       -       3855
  10 Spin_Retry_Count        0x0013   100   100   051    Pre-fail  Always       -       0
  11 Calibration_Retry_Count 0x0012   100   100   051    Old_age   Always       -       0
- 12 Power_Cycle_Count       0x0032   099   099   000    Old_age   Always       -       1470
+ 12 Power_Cycle_Count       0x0032   099   099   000    Old_age   Always       -       1472
 192 Power-Off_Retract_Count 0x0032   200   200   000    Old_age   Always       -       274
-193 Load_Cycle_Count        0x0032   117   117   000    Old_age   Always       -       250296
-194 Temperature_Celsius     0x0022   099   091   000    Old_age   Always       -       44
+193 Load_Cycle_Count        0x0032   117   117   000    Old_age   Always       -       250303
+194 Temperature_Celsius     0x0022   109   091   000    Old_age   Always       -       34
 196 Reallocated_Event_Count 0x0032   200   200   000    Old_age   Always       -       0
 197 Current_Pending_Sector  0x0012   200   200   000    Old_age   Always       -       0
 198 Offline_Uncorrectable   0x0010   100   253   000    Old_age   Offline      -       0
@@ -125,16 +125,19 @@ Error 1 occurred at disk power-on lifetime: 3784 hours (157 days + 16 hours)
 
 SMART Self-test log structure revision number 1
 Num  Test_Description    Status                  Remaining  LifeTime(hours)  LBA_of_first_error
-# 1  Extended offline    Completed without error       00%      3837         -
-# 2  Conveyance offline  Completed without error       00%      3836         -
-# 3  Short offline       Completed without error       00%      3836         -
-# 4  Extended offline    Completed without error       00%      3817         -
-# 5  Conveyance offline  Completed without error       00%      3816         -
-# 6  Short offline       Completed without error       00%      3816         -
-# 7  Extended offline    Completed: read failure       70%      3778         65829748
-# 8  Extended offline    Completed: read failure       70%      3777         65829748
-# 9  Conveyance offline  Completed without error       00%      3777         -
-#10  Short offline       Completed without error       00%      3777         -
+# 1  Extended offline    Completed without error       00%      3845         -
+# 2  Conveyance offline  Completed without error       00%      3845         -
+# 3  Short offline       Completed without error       00%      3845         -
+# 4  Extended offline    Completed without error       00%      3837         -
+# 5  Conveyance offline  Completed without error       00%      3836         -
+# 6  Short offline       Completed without error       00%      3836         -
+# 7  Extended offline    Completed without error       00%      3817         -
+# 8  Conveyance offline  Completed without error       00%      3816         -
+# 9  Short offline       Completed without error       00%      3816         -
+#10  Extended offline    Completed: read failure       70%      3778         65829748
+#11  Extended offline    Completed: read failure       70%      3777         65829748
+#12  Conveyance offline  Completed without error       00%      3777         -
+#13  Short offline       Completed without error       00%      3777         -
 2 of 2 failed self-tests are outdated by newer successful extended offline self-test # 1
 
 SMART Selective self-test log data structure revision number 1
