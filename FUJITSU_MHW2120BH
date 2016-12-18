@@ -12,7 +12,7 @@ Sector Size:      512 bytes logical/physical
 Device is:        In smartctl database [for details use: -P show]
 ATA Version is:   ATA8-ACS T13/1699-D revision 3b
 SATA Version is:  SATA 2.5, 1.5 Gb/s
-Local Time is:    Fri Nov 25 21:51:54 2016 UTC
+Local Time is:    Sun Dec 18 09:01:56 2016 UTC
 SMART support is: Available - device has SMART capability.
 SMART support is: Enabled
 
@@ -56,26 +56,26 @@ SCT capabilities: 	       (0x003d)	SCT Status supported.
 SMART Attributes Data Structure revision number: 16
 Vendor Specific SMART Attributes with Thresholds:
 ID# ATTRIBUTE_NAME          FLAG     VALUE WORST THRESH TYPE      UPDATED  WHEN_FAILED RAW_VALUE
-  1 Raw_Read_Error_Rate     0x000f   100   100   046    Pre-fail  Always       -       110055
+  1 Raw_Read_Error_Rate     0x000f   100   100   046    Pre-fail  Always       -       252994
   2 Throughput_Performance  0x0005   100   100   030    Pre-fail  Offline      -       32374784
   3 Spin_Up_Time            0x0003   100   100   025    Pre-fail  Always       -       1
-  4 Start_Stop_Count        0x0032   099   099   000    Old_age   Always       -       1922
+  4 Start_Stop_Count        0x0032   099   099   000    Old_age   Always       -       1924
   5 Reallocated_Sector_Ct   0x0033   100   100   024    Pre-fail  Always       -       0 (2000 0)
-  7 Seek_Error_Rate         0x000f   100   100   047    Pre-fail  Always       -       661
+  7 Seek_Error_Rate         0x000f   100   100   047    Pre-fail  Always       -       1419
   8 Seek_Time_Performance   0x0005   100   100   019    Pre-fail  Offline      -       0
-  9 Power_On_Hours          0x0032   090   090   000    Old_age   Always       -       5020
+  9 Power_On_Hours          0x0032   090   090   000    Old_age   Always       -       5038
  10 Spin_Retry_Count        0x0013   100   100   020    Pre-fail  Always       -       0
- 12 Power_Cycle_Count       0x0032   100   100   000    Old_age   Always       -       1188
+ 12 Power_Cycle_Count       0x0032   100   100   000    Old_age   Always       -       1190
 192 Power-Off_Retract_Count 0x0032   100   100   000    Old_age   Always       -       123
-193 Load_Cycle_Count        0x0032   099   099   000    Old_age   Always       -       26682
-194 Temperature_Celsius     0x0022   100   100   000    Old_age   Always       -       39 (Min/Max 4/57)
-195 Hardware_ECC_Recovered  0x001a   100   100   000    Old_age   Always       -       152
+193 Load_Cycle_Count        0x0032   099   099   000    Old_age   Always       -       26690
+194 Temperature_Celsius     0x0022   100   100   000    Old_age   Always       -       33 (Min/Max 4/57)
+195 Hardware_ECC_Recovered  0x001a   100   100   000    Old_age   Always       -       288
 196 Reallocated_Event_Count 0x0032   100   100   000    Old_age   Always       -       0 (0 6977)
 197 Current_Pending_Sector  0x0012   100   100   000    Old_age   Always       -       0
 198 Offline_Uncorrectable   0x0010   100   100   000    Old_age   Offline      -       0
 199 UDMA_CRC_Error_Count    0x003e   200   200   000    Old_age   Always       -       0
-200 Multi_Zone_Error_Rate   0x000f   100   100   060    Pre-fail  Always       -       10233
-203 Run_Out_Cancel          0x0002   100   100   000    Old_age   Always       -       3732210908488
+200 Multi_Zone_Error_Rate   0x000f   100   100   060    Pre-fail  Always       -       12827
+203 Run_Out_Cancel          0x0002   100   100   000    Old_age   Always       -       2632710487372
 240 Head_Flying_Hours       0x003e   200   200   000    Old_age   Always       -       0
 
 SMART Error Log Version: 1
@@ -113,15 +113,18 @@ Error 1 occurred at disk power-on lifetime: 4923 hours (205 days + 3 hours)
 
 SMART Self-test log structure revision number 1
 Num  Test_Description    Status                  Remaining  LifeTime(hours)  LBA_of_first_error
-# 1  Extended offline    Completed without error       00%      5019         -
-# 2  Conveyance offline  Completed without error       00%      5017         -
-# 3  Short offline       Completed without error       00%      5017         -
-# 4  Short offline       Completed without error       00%      4969         -
-# 5  Short offline       Completed without error       00%      4929         -
-# 6  Extended offline    Completed without error       00%      4913         -
-# 7  Conveyance offline  Completed without error       00%      4912         -
-# 8  Conveyance offline  Completed without error       00%      4912         -
-# 9  Short offline       Completed without error       00%      4912         -
+# 1  Extended offline    Completed without error       00%      5038         -
+# 2  Conveyance offline  Completed without error       00%      5036         -
+# 3  Short offline       Completed without error       00%      5036         -
+# 4  Extended offline    Completed without error       00%      5019         -
+# 5  Conveyance offline  Completed without error       00%      5017         -
+# 6  Short offline       Completed without error       00%      5017         -
+# 7  Short offline       Completed without error       00%      4969         -
+# 8  Short offline       Completed without error       00%      4929         -
+# 9  Extended offline    Completed without error       00%      4913         -
+#10  Conveyance offline  Completed without error       00%      4912         -
+#11  Conveyance offline  Completed without error       00%      4912         -
+#12  Short offline       Completed without error       00%      4912         -
 
 SMART Selective self-test log data structure revision number 1
  SPAN  MIN_LBA  MAX_LBA  CURRENT_TEST_STATUS
