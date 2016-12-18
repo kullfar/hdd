@@ -1,5 +1,5 @@
-smartctl 6.4 2014-10-07 r4002 [x86_64-linux-4.2.0-16-generic] (local build)
-Copyright (C) 2002-14, Bruce Allen, Christian Franke, www.smartmontools.org
+smartctl 6.5 2016-01-24 r4214 [x86_64-linux-4.4.0-31-generic] (local build)
+Copyright (C) 2002-16, Bruce Allen, Christian Franke, www.smartmontools.org
 
 === START OF INFORMATION SECTION ===
 Model Family:     Hitachi Travelstar 5K160
@@ -10,7 +10,7 @@ User Capacity:    160,041,885,696 bytes [160 GB]
 Sector Size:      512 bytes logical/physical
 Device is:        In smartctl database [for details use: -P show]
 ATA Version is:   ATA/ATAPI-7 T13/1532D revision 1
-Local Time is:    Tue Feb 16 08:30:15 2016 UTC
+Local Time is:    Sun Dec 18 08:59:17 2016 UTC
 SMART support is: Available - device has SMART capability.
 SMART support is: Enabled
 
@@ -51,17 +51,17 @@ ID# ATTRIBUTE_NAME          FLAG     VALUE WORST THRESH TYPE      UPDATED  WHEN_
   1 Raw_Read_Error_Rate     0x000b   100   094   062    Pre-fail  Always       -       0
   2 Throughput_Performance  0x0005   100   100   040    Pre-fail  Offline      -       0
   3 Spin_Up_Time            0x0007   229   100   033    Pre-fail  Always       -       1
-  4 Start_Stop_Count        0x0012   098   098   000    Old_age   Always       -       4156
+  4 Start_Stop_Count        0x0012   098   098   000    Old_age   Always       -       4158
   5 Reallocated_Sector_Ct   0x0033   100   100   005    Pre-fail  Always       -       2 (0 2)
   7 Seek_Error_Rate         0x000b   100   100   067    Pre-fail  Always       -       0
   8 Seek_Time_Performance   0x0005   100   100   040    Pre-fail  Offline      -       0
-  9 Power_On_Hours          0x0012   073   073   000    Old_age   Always       -       12155
+  9 Power_On_Hours          0x0012   073   073   000    Old_age   Always       -       12173
  10 Spin_Retry_Count        0x0013   100   100   060    Pre-fail  Always       -       0
- 12 Power_Cycle_Count       0x0032   099   099   000    Old_age   Always       -       2664
+ 12 Power_Cycle_Count       0x0032   099   099   000    Old_age   Always       -       2666
 191 G-Sense_Error_Rate      0x000a   100   094   000    Old_age   Always       -       0
 192 Power-Off_Retract_Count 0x0032   100   100   000    Old_age   Always       -       51183758
-193 Load_Cycle_Count        0x0012   096   096   000    Old_age   Always       -       47685
-194 Temperature_Celsius     0x0002   144   082   000    Old_age   Always       -       38 (Min/Max -6/67)
+193 Load_Cycle_Count        0x0012   096   096   000    Old_age   Always       -       47695
+194 Temperature_Celsius     0x0002   166   082   000    Old_age   Always       -       33 (Min/Max -6/67)
 196 Reallocated_Event_Count 0x0032   100   100   000    Old_age   Always       -       1
 197 Current_Pending_Sector  0x0022   100   100   000    Old_age   Always       -       0
 198 Offline_Uncorrectable   0x0008   100   100   000    Old_age   Offline      -       0
@@ -171,11 +171,13 @@ Error 50 occurred at disk power-on lifetime: 4419 hours (184 days + 3 hours)
 
 SMART Self-test log structure revision number 1
 Num  Test_Description    Status                  Remaining  LifeTime(hours)  LBA_of_first_error
-# 1  Extended offline    Completed without error       00%     12140         -
-# 2  Short offline       Completed without error       00%     12139         -
-# 3  Short offline       Completed without error       00%     12139         -
-# 4  Extended offline    Aborted by host               90%     12139         -
-# 5  Short offline       Completed without error       00%     12138         -
+# 1  Extended offline    Completed without error       00%     12172         -
+# 2  Short offline       Completed without error       00%     12171         -
+# 3  Extended offline    Completed without error       00%     12140         -
+# 4  Short offline       Completed without error       00%     12139         -
+# 5  Short offline       Completed without error       00%     12139         -
+# 6  Extended offline    Aborted by host               90%     12139         -
+# 7  Short offline       Completed without error       00%     12138         -
 
 SMART Selective self-test log data structure revision number 1
  SPAN  MIN_LBA  MAX_LBA  CURRENT_TEST_STATUS
